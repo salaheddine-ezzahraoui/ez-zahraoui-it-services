@@ -7,7 +7,7 @@ interface SEOProps {
 }
 
 const SITE_NAME = 'EZ-ZAHRAOUI IT SERVICES'
-const BASE_URL = 'https://ez-zahraoui-it.ma'
+const BASE_URL = 'https://salaheddine-ezzahraoui.github.io/ez-zahraoui-it-services'
 
 export default function SEO({ title, description }: SEOProps) {
   const { pathname } = useLocation()

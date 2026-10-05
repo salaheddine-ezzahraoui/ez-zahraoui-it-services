@@ -23,7 +23,7 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2.5">
               <img
-                src="/logo-white.svg"
+                src={`${import.meta.env.BASE_URL}logo-white.svg`}
                 alt="EZ-ZAHRAOUI IT SERVICES"
                 className="h-10 w-auto"
               />

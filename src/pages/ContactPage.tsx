@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import type { ChangeEvent, FormEvent } from 'react'
 import { Send, CheckCircle2, Phone, Mail, MessageCircle, Linkedin, MapPin, AlertCircle } from 'lucide-react'
+import { Link } from 'react-router-dom'
 import { useLanguage } from '../context/LanguageContext'
 import SEO from '../components/ui/SEO'
 import Section from '../components/ui/Section'
@@ -423,9 +424,9 @@ export default function ContactPage() {
                         />
                         <label htmlFor="consent" className="text-sm text-ink/60">
                           {t('contactPage.consent')}{' '}
-                          <a href="/privacy-policy" className="text-azure underline hover:text-azure-dark">
+                          <Link to="/privacy-policy" className="text-azure underline hover:text-azure-dark">
                             {t('contactPage.consentLink')}
-                          </a>{' '}
+                          </Link>{' '}
                           {t('contactPage.consentEnd')} <span className="text-red-500">*</span>
                         </label>
                       </div>

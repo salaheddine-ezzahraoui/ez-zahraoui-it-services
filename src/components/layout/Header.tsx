@@ -34,7 +34,7 @@ export default function Header() {
             aria-label="EZ-ZAHRAOUI IT SERVICES — Home"
           >
             <img
-              src="/logo-white.svg"
+              src={`${import.meta.env.BASE_URL}logo-white.svg`}
               alt="EZ-ZAHRAOUI IT SERVICES"
               className="h-10 w-auto"
             />

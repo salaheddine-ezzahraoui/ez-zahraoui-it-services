@@ -61,12 +61,12 @@ export default function AboutPage() {
           <div className="flex items-center justify-center">
             <div className="overflow-hidden rounded-lg">
               <img
-                src="/photo-salaheddine.jpg"
+                src={`${import.meta.env.BASE_URL}photo-salaheddine.jpg`}
                 alt="Salaheddine Ez-Zahraoui — Founder of EZ-ZAHRAOUI IT SERVICES"
                 className="h-auto w-full max-w-sm object-cover"
                 onError={(e) => {
                   const target = e.target as HTMLImageElement
-                  target.src = '/photo-placeholder.svg'
+                  target.src = `${import.meta.env.BASE_URL}photo-placeholder.svg`
                 }}
               />
             </div>
