@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex" />
+    <title>EZ-ZAHRAOUI IT SERVICES</title>
+    <script type="text/javascript">
+      // GitHub Pages has no server-side rewrites: redirect deep links
+      // (e.g. /ez-zahraoui-it-services/contact) to index.html so the
+      // single-page app can take over. Based on spa-github-pages.
+      var pathSegmentsToKeep = 1; // project page: /ez-zahraoui-it-services/
+
+      var l = window.location;
+      l.replace(
+        l.protocol +
+          '//' +
+          l.hostname +
+          (l.port ? ':' + l.port : '') +
+          l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') +
+          '/?/' +
+          l.pathname
+            .slice(1)
+            .split('/')
+            .slice(pathSegmentsToKeep)
+            .join('/')
+            .replace(/&/g, '~and~') +
+          (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+          l.hash
+      );
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <p>Redirection en cours…</p>
+      <p><a href="/ez-zahraoui-it-services/">Continuer vers le site</a></p>
+    </noscript>
+  </body>
+</html>
