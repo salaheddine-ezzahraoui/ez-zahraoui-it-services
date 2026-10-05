@@ -61,6 +61,22 @@ The contact form currently validates on the frontend and shows a success state. 
 1. Set `VITE_CONTACT_ENDPOINT` in your `.env` file
 2. Update the `handleSubmit` function in `src/pages/ContactPage.tsx` to POST to your endpoint
 
+## Deployment (GitHub Pages)
+
+The site is live at **https://salaheddine-ezzahraoui.github.io/ez-zahraoui-it-services/**.
+
+- GitHub Pages serves the production build from the `gh-pages` branch
+- Production builds use the base path `/ez-zahraoui-it-services/` (see `vite.config.ts`); local development stays at the root
+- `public/404.html` provides the SPA fallback so deep links such as `/contact` work on direct load
+
+To publish changes:
+
+```bash
+powershell -ExecutionPolicy Bypass -File .\deploy.ps1
+```
+
+The site updates within about a minute.
+
 ## License
 
 Private — All rights reserved.
